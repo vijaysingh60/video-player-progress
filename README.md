@@ -53,8 +53,8 @@ A smart video tracking system for online learning platforms that calculates vide
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/smart-video-tracker.git
-cd smart-video-tracker
+git clone https://github.com/vijaysingh60/video-player-progress.git
+cd video-player-progress
 npm install
 npm run dev
 

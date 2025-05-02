@@ -21,7 +21,7 @@ A smart video tracking system for online learning platforms that calculates vide
 - Progress bar showing actual watched sections
 
 ---
-##📍 How we tracked the watched intervals
+## 📍 How we tracked the watched intervals
   - We used a custom useVideoProgress hook to track exactly which parts of a video the user has watched. When the video is playing, we:
   
   - Start an interval { start, end } from the current playback time.
@@ -33,7 +33,7 @@ A smart video tracking system for online learning platforms that calculates vide
   - This gives us an accurate list of what parts of the video were actually viewed.
 
 
-##🧠 How we merged intervals to calculate unique progress
+## 🧠 How we merged intervals to calculate unique progress
   - To prevent double-counting time (e.g., rewatching the same segment), we:
   
   - Use a utility function to merge overlapping or adjacent intervals.
@@ -43,7 +43,7 @@ A smart video tracking system for online learning platforms that calculates vide
   - Progress percentage is then calculated as:
   - watchedTime / totalVideoDuration * 100
 
-##⚠️ Challenges and how we solved them
+## ⚠️ Challenges and how we solved them
     - Problem: localStorage wasn't saving the latest lastPosition correctly due to async state updates.
   - ✅ Solution: Used a ref to track the latest lastPosition and wrote that to localStorage.
 
